@@ -4,10 +4,8 @@ const appInfo = require("./package.json");
 module.exports = {
   apps: [{
     // Alias for pm2 instance
-    //name: appInfo.name,
     name: appInfo.name,
     // Script path relative to pm2 start
-    //script: appInfo.main,
     script: appInfo.main,
     /*
       Cluster mode allows the app to be scaled across all CPU's available
@@ -46,6 +44,13 @@ module.exports = {
       NODE_ENV: 'production'
     }
   }],
+  /*
+    PM2 allows you to deploy to the server from your local machine.
+    Will need to run the following cmds from local to work:
+    - pm2 deploy <config_file> production setup
+    - pm2 deploy <config_file> production update
+    - pm2 deploy <config_file> production
+  */
 
   deploy: {
     // can set deployment for production, staging, and development
