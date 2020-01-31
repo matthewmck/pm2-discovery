@@ -50,12 +50,12 @@ module.exports = {
   deploy: {
     // can set deployment for production, staging, and development
     production: {
-      user: 'node',
-      host: '212.83.163.1',
+      user: 'matt',
+      host: '192.168.56.101',
       // ref is the branch you want to pull from
       ref: 'origin/master',
       // repo to clone
-      repo: 'git@github.com:repo.git',
+      repo: 'git@github.com:matthewmck/pm2-discovery.git',
       // path of the application on the server
       path: '/var/www/production',
       // commands to be executed on the server after the repo has been cloned
