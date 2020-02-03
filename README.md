@@ -1,6 +1,6 @@
 # PM2 Quick Guide
 
-## cmds cheet sheet
+## cmds cheat sheet
 ```
 pm2 start       # start process
 pm2 stop        # stop process
@@ -16,6 +16,16 @@ pm2 delete      # delete process
 ```
 pm2 status      # condensed overview of running processes
 pm2 monit       # detailed overview of running processes
+```
+
+If deploying for first time
+```
+pm2 deploy <configuration_file> <environment> setup
+pm2 deploy <configuration_file> <environment> update
+```
+When ready to push changes to server
+```
+pm2 deploy <configuration_file> <environment> env
 ```
 
 ## Setup pm2 so others can access the process
