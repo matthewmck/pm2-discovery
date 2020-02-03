@@ -9,9 +9,9 @@ pm2 delete      # delete process
 **args and flags**
 
 * name of script or config file (i.e. `pm2 start index.js`)
-* `--watch` 
-* `--env`
-* `--name`
+* `--watch` to watch and Restart app when files change
+* `--env` to set which environment to run on
+* `--name` to give name to the process
 
 ```
 pm2 status      # condensed overview of running processes
